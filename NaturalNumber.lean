@@ -30,3 +30,7 @@ def MyNat.add (m n : MyNat) : MyNat :=
 -- example: 命題の証明を名前をつけずに行う(後で参照しない)
 example : MyNat.add MyNat.one MyNat.one = MyNat.two := by
 rfl -- tacticのひとつ.証明のキーワード
+
+-- 1.3.7 練習問題
+example (n : MyNat) : MyNat.add n .zero = n := by
+  rfl
