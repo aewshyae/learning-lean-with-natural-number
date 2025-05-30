@@ -6,4 +6,4 @@ package "CrashCourse" where
 
 @[default_target]
 lean_lib «CrashCourse» where
-  -- add library configuration options here
+  globs := #[.submodules `CrashCourse]
